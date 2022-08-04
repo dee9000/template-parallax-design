@@ -1,0 +1,184 @@
+
+.navbar{
+  background-color: #880E50;
+  font-size:20px;
+  font-family: 'Jura', sans-serif;
+}
+.background-one{
+  background-image: url(img/pic1.jpg),linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 120vh;
+  background-attachment: fixed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.background-two{
+  margin-top: -5em;
+  background-image: url(img/pic2.jpg),linear-gradient(rgba(0,0,128,0.4),rgba(0,0,128,0.4));
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  transition: all 1s;
+  }
+
+.background-three{
+  margin-top: -5em;
+  background-image: url(img/pic3.jpg),linear-gradient(rgba(128,0,0,0.4),rgba(128,0,0,0.4));
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  transition: all 1s;
+}
+
+.background-four{
+  margin-top: -5em;
+  background-image: url(img/pic5.jpg),linear-gradient(rgba(0,128,0,0.3),rgba(0,128,0,0.3));
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  transition: all 1s;
+}
+
+
+
+/*HEADER CONTENTS IMAGE LOGO SCHOOL TITLES E.T.C*/
+.content-header .display-3{
+  color: #FFE0BD;
+  font-size:80px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.content-header {
+  color: #ffffff;
+  padding:10em 0 1em 0;
+  font-size:15px;
+  font-family: 'Jura', sans-serif;
+  font-weight:500;
+}
+
+/*media query for all parallax panels*/
+@media(max-width:1200px) {
+  .mouse-wrapper {
+   display:none;
+  }
+}
+@media(max-width:750px) {
+  .content-header .display-3{
+    font-size:40px;
+  }
+  .content-header {
+    padding:5em 0 1em 0;
+    font-size:15px;
+  }
+
+  .background-two, .background-three, .background-four{
+    height:80vh;
+  }
+
+}
+
+/*ANIMATED MOUSE ARROW*/
+.mouse-wrapper {
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.mouse-arrow {
+	display: block;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	margin: 2px 0 3px 6px;
+	width: 15px;
+	height: 15px;
+	-webkit-animation: mouse-scroll 1s infinite;
+	-moz-animation: mouse-scroll 1s infinite;
+	-webkit-animation-delay: 100ms;
+	-moz-animation-delay: 100ms;
+	-webkit-animation-direction: alternate;
+}
+
+.mouse-arrow:after,
+.mouse-arrow:before {
+	position: absolute;
+	content: '';
+	display: block;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	width: 15px;
+	height:15px;
+	-webkit-animation: mouse-scroll 1s infinite;
+	-moz-animation: mouse-scroll 1s infinite;
+}
+
+.mouse-arrow:after {
+	margin: 7px 0 3px 7px;
+	-webkit-animation-delay: 200ms;
+	-moz-animation-delay: 200ms;
+	-webkit-animation-direction: alternate;
+}
+
+.mouse-arrow:before {
+	margin: 14px 0 3px 14px;
+	-webkit-animation-delay: 300ms;
+	-moz-animation-delay: 300ms;
+	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/*BTN BUTTONS*/
+.content-header .btn-lg{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  margin:7px;
+}
+.content-header .btn-lg:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 8px;
+  right: -20px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.content-header .btn-lg:hover{
+  padding-right: 24px;
+  padding-left:8px;
+  transform: scale(0.9);
+}
+
+.content-header .btn-lg:hover:after {
+  opacity: 1;
+  right: 10px;
+}
