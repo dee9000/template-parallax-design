@@ -25,7 +25,7 @@
   <body class="text-center">
 
   <header class="masthead mb-auto">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-md navbar-dark">
         <a href="index.html"><img src="img/logo-light.png" height="70" class="animate__animated animate__rotateIn"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -63,11 +63,18 @@
         <img src="img/logo-light.png" height="250" width="250" alt="logo" class="animate__animated animate__flip">
         <h1 class="display-3 animate__animated animate__flipInX">ALSTON MOOR FEDERATION</h1>
         <h3 class="animate__animated animate__backInUp">Excellence in education for your child</h3>
-        <p>
+        <!-- these will be visible in desktop version -->
+        <div class="desktop_links">
           <a href="#samuel-king" class="btn btn-primary my-2 btn-lg animate__animated animate__fadeInUp">SAMUEL KING'S</a>
           <a href="#alston-primary" class="btn btn-danger my-2 btn-lg animate__animated animate__fadeInUp">ALSTON PRIMARY </a>
           <a href="#nenthead" class="btn btn-success my-2 btn-lg animate__animated animate__fadeInUp">NENTHEAD </a>
-        </p>
+          </div class="desktop_links">
+          <!-- same links as above but hidden only for mobile version will jump user straight to page-->
+          <div class="mobile_links">
+            <a href="#" class="btn btn-primary my-2 btn-lg animate__animated animate__fadeInUp">SAMUEL KING'S</a>
+            <a href="#" class="btn btn-danger my-2 btn-lg animate__animated animate__fadeInUp">ALSTON PRIMARY </a>
+            <a href="#" class="btn btn-success my-2 btn-lg animate__animated animate__fadeInUp">NENTHEAD </a>
+          </div class="mobile_links">
         <div class='mouse-wrapper'>
              <div class="mouse-arrow">
              </div>
