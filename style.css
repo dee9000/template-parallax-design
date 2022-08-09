@@ -37,6 +37,12 @@ padding: 0;
   background-attachment: fixed;
   transition: all 1s;
   }
+  .background-two:hover{
+    background-color: rgba(0,0,128,0.4);
+    cursor: pointer;
+  }
+
+
 
 .background-three{
   margin-top: -5em;
@@ -49,10 +55,16 @@ padding: 0;
   background-attachment: fixed;
   transition: all 1s;
 }
+.background-three:hover{
+  background-color: rgba(128,0,0,0.4);
+  cursor: pointer;
+}
+
+
 
 .background-four{
   margin-top: -5em;
-  background-image: url(img/pic5.jpg),linear-gradient(rgba(0,128,0,0.3),rgba(0,128,0,0.3));
+  background-image: url(img/pic5.jpg), linear-gradient(rgba(0,128,0,0.3),rgba(0,128,0,0.3));
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,6 +72,10 @@ padding: 0;
   height: 100%;
   background-attachment: fixed;
   transition: all 1s;
+}
+.background-four:hover{
+  background-color: rgba(0,128,0,0.3);
+  cursor: pointer;
 }
 
 
